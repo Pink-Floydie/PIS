@@ -1,0 +1,104 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+body.article {
+  background: #1abc9c;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #ffffff;
+  padding: 28px 40px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.article .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+body.article .brand {
+  background: rgba(0,0,0,0.18);
+  padding: 10px 14px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+body.article .brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+body.article .topbar-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+body.article .title {
+  margin: 0 0 14px 0;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+body.article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+body.article .author {
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+body.article .date {
+  font-style: italic;
+  font-size: 16px;
+  opacity: 0.9;
+  text-align: right;
+}
+
+body.article .text {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 1100px;
+}
+
+body.article .header,
+body.article hr {
+  display: none;
+}

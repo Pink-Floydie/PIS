@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/article.css">
+    <meta charset="UTF-8">
+    <title>Архив статей</title>
+</head>
+<body class="archive">
+    <div class="header">
+        <img src="https://lmsdo.rea.ru/pluginfile.php/14876/course/overviewfiles/8.png"
+        style="height: 60px; width: auto;">
+    </div>
+
+    <h1>Все статьи</h1>
+
+    {% for post in posts %}
+        <div class="article">
+            <h2><a href="{% url 'get_article' post.id %}">{{ post.title }}</a></h2>
+            <p>
+                {{ post.author.username }} <br>
+                {{ post.created_date }}
+            </p>
+            <p>
+                {{ post.text }}
+            </p>
+            <hr>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
