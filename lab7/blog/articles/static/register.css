@@ -1,0 +1,80 @@
+body.page {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #1abc9c;
+  color: #ffffff;
+  padding: 28px 40px;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.brand {
+  background: rgba(0,0,0,0.18);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.topbar-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.content {
+  max-width: 900px;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.field {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(0,0,0,0.12);
+  color: #fff;
+  outline: none;
+}
+
+.field::placeholder {
+  color: rgba(255,255,255,0.75);
+}
+
+.btn {
+  margin-top: 8px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,0.35);
+}
+
+.error {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: rgba(255, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}

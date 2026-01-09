@@ -1,0 +1,40 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'article.css' %}">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ article.title }}</title>
+  <link rel="stylesheet" href="{% static 'article.css' %}">
+</head>
+
+<body class="article">
+
+  <div class="topbar">
+    <div class="brand">
+      <img
+        src="https://static3.banki.ru/ugc/ac/99/1b/7a/27.svg"
+        class="brand-logo"
+        alt="Лого"
+      >
+    </div>
+
+    <div class="topbar-right">
+      <a class="topbar-link" href="{% url 'register' %}">Регистрация</a>
+      <a class="topbar-link" href="/">Все статьи</a>
+    </div>
+  </div>
+
+  <h1 class="title">{{ article.title }}</h1>
+
+  <div class="meta">
+    <div class="author">{{ article.author.username }}</div>
+    <div class="date">{{ article.created_date }}</div>
+  </div>
+
+  <div class="text">
+    {{ article.text }}
+  </div>
+
+</body>
+</html>

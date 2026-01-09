@@ -1,0 +1,44 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'article.css' %}">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Архив статей</title>
+    <link rel="stylesheet" href="{% static 'article.css' %}">
+</head>
+<body class="archive">
+
+    <div class="topbar">
+        <div class="brand">
+            <img src="https://static3.banki.ru/ugc/ac/99/1b/7a/27.svg"
+                 style="height: 60px; width: auto;">
+        </div>
+
+        <div class="topbar-right">
+            <a class="topbar-link" href="{% url 'register' %}">Регистрация</a>
+        </div>
+    </div>
+
+    <h1>Все статьи</h1>
+
+    {% for post in posts %}
+  <div class="one-post">
+    <div class="article-header">
+      <h2 class="article-title">
+        <a href="{% url 'get_article' post.id %}">{{ post.title }}</a>
+      </h2>
+      <button type="button" class="fold-button">свернуть</button>
+    </div>
+
+    <p class="article-author">{{ post.author.username }}</p>
+    <p class="article-created-date">{{ post.created_date }}</p>
+    <p class="article-text">{{ post.text }}</p>
+
+    <hr>
+  </div>
+{% endfor %}
+    <script src="{% static 'js/helloworld.js' %}"></script>
+    <script src="{% static 'js/fold-post.js' %}"></script>
+</body>
+</html>
